@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Барбершоп ХАН, Москва. Мужские стрижки, борода, горячее бритьё</title>
+<meta name="description" content="Барбершоп ХАН на Болотниковской, метро Нагатинская. Мужская стрижка, борода, королевское бритьё опасной бритвой. Запись онлайн.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Cormorant:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#0C0A09}
+  ::selection{background:#9E1B1B;color:#ECE3D4}
+  @keyframes letterfly{
+    0%{transform:perspective(1100px) translateZ(-2600px);opacity:0;filter:blur(22px)}
+    22%{opacity:1}
+    64%{transform:perspective(1100px) translateZ(250px);filter:blur(0)}
+    82%{transform:perspective(1100px) translateZ(-45px)}
+    100%{transform:perspective(1100px) translateZ(0);opacity:1;filter:blur(0)}
+  }
+  @keyframes introout{0%,70%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+  @keyframes fadein{from{opacity:0}to{opacity:1}}
+  @keyframes fadeup{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes scrollhint{0%,100%{transform:translateY(0);opacity:.45}50%{transform:translateY(9px);opacity:1}}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes haze{0%,100%{opacity:.6}50%{opacity:.95}}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001s!important;animation-delay:0s!important}
+    #khan-intro{display:none!important}
+    [data-reveal]{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="position:relative;background:#0C0A09;color:#ECE3D4;font-family:'PT Sans',sans-serif;overflow-x:clip">
+
+  <!-- ============ NAV ============ -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:70;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(18px,5vw,64px);opacity:0;animation:fadein 1s ease 2.9s forwards">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+      <span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:26px;letter-spacing:.18em;color:#ECE3D4">ХАН</span>
+      <span style="width:1px;height:22px;background:rgba(201,162,75,.45)"></span>
+      <span style="font-family:'PT Sans',sans-serif;font-size:11px;letter-spacing:.34em;color:#C9A24B;text-transform:uppercase">Барбершоп</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:clamp(14px,2.4vw,38px)">
+      <a href="#services" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Услуги</a>
+      <a href="#atmo" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Атмосфера</a>
+      <a href="#masters" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Мастера</a>
+      <a href="#book" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Контакты</a>
+      <!-- BOOKING: заменить href на ссылку yclients -->
+      <a href="#book" style="display:inline-block;padding:11px 22px;background:#9E1B1B;color:#ECE3D4;font-family:'Oswald',sans-serif;font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(201,162,75,.35)">Записаться</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO (behind glass) ============ -->
+  <section id="top" style="position:relative;height:100vh;min-height:620px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 8%, rgba(158,27,27,.34), transparent 55%), radial-gradient(90% 70% at 50% 120%, rgba(201,162,75,.10), transparent 60%), #0C0A09"></div>
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(90deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px);opacity:.5"></div>
+    <div style="position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 20% 30%, rgba(201,162,75,.7), transparent),radial-gradient(1.5px 1.5px at 70% 22%, rgba(217,190,132,.6), transparent),radial-gradient(2px 2px at 42% 60%, rgba(201,162,75,.5), transparent),radial-gradient(1px 1px at 85% 65%, rgba(217,190,132,.6), transparent),radial-gradient(1.5px 1.5px at 12% 75%, rgba(201,162,75,.5), transparent),radial-gradient(1px 1px at 58% 80%, rgba(217,190,132,.5), transparent),radial-gradient(2px 2px at 33% 18%, rgba(201,162,75,.45), transparent);opacity:.8;animation:haze 7s ease-in-out infinite"></div>
+
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;padding:0 20px">
+      <div style="font-family:'Cormorant',serif;font-style:italic;font-size:clamp(15px,2.4vw,22px);letter-spacing:.05em;color:#C9A24B;margin-bottom:6px;opacity:0;animation:fadein 1s ease 3.0s forwards">мужская территория с 2019</div>
+      <h1 style="margin:0;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(96px,26vw,360px);line-height:.82;letter-spacing:.02em;color:#ECE3D4;text-shadow:0 12px 60px rgba(0,0,0,.65),0 0 34px rgba(201,162,75,.25);animation:letterfly 1.1s cubic-bezier(.2,.85,.25,1) 1.3s both">ХАН</h1>
+      <div style="display:flex;align-items:center;gap:16px;margin-top:18px;opacity:0;animation:fadein 1s ease 3.1s forwards">
+        <span style="width:clamp(30px,7vw,70px);height:1px;background:rgba(201,162,75,.6)"></span>
+        <span style="font-family:'Oswald',sans-serif;font-weight:400;font-size:clamp(12px,1.5vw,16px);letter-spacing:.42em;text-transform:uppercase;color:#C9A24B;white-space:nowrap">Барбершоп</span>
+        <span style="width:clamp(30px,7vw,70px);height:1px;background:rgba(201,162,75,.6)"></span>
+      </div>
+      <p style="max-width:520px;margin:26px auto 0;font-size:clamp(15px,1.7vw,18px);line-height:1.6;color:#C7BDB2;opacity:0;animation:fadeup 1s ease 3.25s forwards">Стрижка, борода и горячее бритьё по канонам ремесла. Чёрный кофе, разговор по делу и результат, за который не стыдно.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:34px;opacity:0;animation:fadeup 1s ease 3.4s forwards">
+        <!-- BOOKING: заменить href на ссылку yclients -->
+        <a href="#book" style="padding:15px 34px;background:#9E1B1B;color:#ECE3D4;font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(201,162,75,.35)">Записаться онлайн</a>
+        <a href="#services" style="padding:15px 34px;background:transparent;color:#ECE3D4;font-family:'Oswald',sans-serif;font-weight:500;font-size:14px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(236,227,212,.25)">Услуги и цены</a>
+      </div>
+    </div>
+
+    <div style="position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadein 1s ease 3.6s forwards">
+      <span style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#8A817A">скролл</span>
+      <span style="display:block;width:18px;height:30px;border:1px solid rgba(201,162,75,.5);border-radius:10px;position:relative">
+        <span style="position:absolute;left:50%;top:6px;width:3px;height:6px;border-radius:2px;background:#C9A24B;transform:translateX(-50%);animation:scrollhint 1.6s ease-in-out infinite"></span>
+      </span>
+    </div>
+  </section>
+
+  <!-- ============ GLASS INTRO OVERLAY (fracture generated in JS) ============ -->
+  <div id="khan-intro" style="position:fixed;inset:0;z-index:60;overflow:hidden;pointer-events:none;opacity:1;animation:introout 1.1s ease 2.6s forwards">
+    <div id="khan-frost" style="position:absolute;inset:0;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:linear-gradient(135deg,rgba(236,227,212,.05),rgba(201,162,75,.03));box-shadow:inset 0 0 140px rgba(255,255,255,.04)"></div>
+    <div id="khan-shards" style="position:absolute;inset:0"></div>
+    <svg id="khan-cracks" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none"></svg>
+    <div id="khan-flash" style="position:absolute;inset:0;background:radial-gradient(58vmax 58vmax at 47% 42%, rgba(255,255,255,.65), rgba(201,162,75,.18) 32%, transparent 60%);opacity:0;mix-blend-mode:screen"></div>
+  </div>
+
+  <!-- ============ TICKER ============ -->
+  <div style="position:relative;z-index:3;overflow:hidden;background:#9E1B1B;border-top:1px solid rgba(201,162,75,.3);border-bottom:1px solid rgba(201,162,75,.3);padding:13px 0">
+    <div style="display:flex;width:max-content;animation:marquee 26s linear infinite;font-family:'Oswald',sans-serif;font-weight:500;font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:#ECE3D4">
+      <span style="padding:0 30px">Стрижка ✦ Борода ✦ Горячее бритьё ✦ Камуфляж седины ✦ Укладка ✦</span>
+      <span style="padding:0 30px">Стрижка ✦ Борода ✦ Горячее бритьё ✦ Камуфляж седины ✦ Укладка ✦</span>
+      <span style="padding:0 30px">Стрижка ✦ Борода ✦ Горячее бритьё ✦ Камуфляж седины ✦ Укладка ✦</span>
+      <span style="padding:0 30px">Стрижка ✦ Борода ✦ Горячее бритьё ✦ Камуфляж седины ✦ Укладка ✦</span>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES — STICKY STACK ============ -->
+  <section id="services" style="position:relative;z-index:3;background:#0C0A09;padding:clamp(60px,9vw,120px) clamp(18px,5vw,64px) 40px">
+    <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);max-width:1180px;margin:0 auto 30px">
+      <div style="font-family:'Cormorant',serif;font-style:italic;font-size:22px;color:#C9A24B">прайс</div>
+      <h2 style="margin:6px 0 0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(38px,6vw,84px);line-height:.95;letter-spacing:.01em;color:#ECE3D4">УСЛУГИ <span style="color:#9E1B1B">МАСТЕРОВ</span></h2>
+      <p style="margin:14px 0 0;max-width:440px;color:#9A9089;font-size:15px;line-height:1.6">Каждая карточка это отдельный ритуал. Скролль вниз, они ложатся одна на другую, как карты в колоде.</p>
+    </div>
+
+    <div style="max-width:1180px;margin:0 auto;position:relative">
+      <article style="position:sticky;top:108px;border:1px solid rgba(201,162,75,.25);background:linear-gradient(135deg,#16110F,#0E0B0A);box-shadow:0 -10px 40px rgba(0,0,0,.5);overflow:hidden">
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch">
+          <div style="flex:1 1 320px;padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;min-height:300px">
+            <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(60px,9vw,120px);line-height:.8;color:rgba(201,162,75,.22)">01</div>
+            <h3 style="margin:10px 0 0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,3.4vw,44px);letter-spacing:.01em;color:#ECE3D4">Мужская стрижка</h3>
+            <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Консультация, мытьё, стрижка машинкой и ножницами, укладка. Подбираем форму под тип лица и стиль.</p>
+            <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">1500 ₽</span><span style="font-size:13px;color:#8A817A">· ~45 мин</span></div>
+          </div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/clipper.png" alt="Машинка для стрижки" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(90deg,#16110F,transparent 35%)"></div></div>
+        </div>
+      </article>
+      <article style="position:sticky;top:128px;margin-top:34px;border:1px solid rgba(201,162,75,.25);background:linear-gradient(135deg,#1A1210,#0E0B0A);box-shadow:0 -10px 40px rgba(0,0,0,.5);overflow:hidden">
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch;flex-direction:row-reverse">
+          <div style="flex:1 1 320px;padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;min-height:300px">
+            <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(60px,9vw,120px);line-height:.8;color:rgba(158,27,27,.32)">02</div>
+            <h3 style="margin:10px 0 0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,3.4vw,44px);color:#ECE3D4">Стрижка + борода</h3>
+            <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Полный образ: стрижка и моделирование бороды с горячим полотенцем и контуром опасной бритвой.</p>
+            <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">2200 ₽</span><span style="font-size:13px;color:#8A817A">· ~75 мин</span></div>
+          </div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/brush.png" alt="Помазок" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(270deg,#1A1210,transparent 35%)"></div></div>
+        </div>
+      </article>
+      <article style="position:sticky;top:148px;margin-top:34px;border:1px solid rgba(201,162,75,.25);background:linear-gradient(135deg,#16110F,#0E0B0A);box-shadow:0 -10px 40px rgba(0,0,0,.5);overflow:hidden">
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch">
+          <div style="flex:1 1 320px;padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;min-height:300px">
+            <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(60px,9vw,120px);line-height:.8;color:rgba(201,162,75,.22)">03</div>
+            <h3 style="margin:10px 0 0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,3.4vw,44px);color:#ECE3D4">Королевское бритьё</h3>
+            <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Классическое бритьё опасной бритвой, два горячих и холодное полотенце, уход и тонизирование кожи.</p>
+            <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">1300 ₽</span><span style="font-size:13px;color:#8A817A">· ~40 мин</span></div>
+          </div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/razor.png" alt="Опасная бритва" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(90deg,#16110F,transparent 35%)"></div></div>
+        </div>
+      </article>
+      <article style="position:sticky;top:168px;margin-top:34px;border:1px solid rgba(201,162,75,.25);background:linear-gradient(135deg,#1A1210,#0E0B0A);box-shadow:0 -10px 40px rgba(0,0,0,.5);overflow:hidden">
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch;flex-direction:row-reverse">
+          <div style="flex:1 1 320px;padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;min-height:300px">
+            <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(60px,9vw,120px);line-height:.8;color:rgba(158,27,27,.32)">04</div>
+            <h3 style="margin:10px 0 0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,3.4vw,44px);color:#ECE3D4">Камуфляж седины</h3>
+            <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Натуральное тонирование волос и бороды, убираем седину мягко, без эффекта «прокраски».</p>
+            <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">800 ₽</span><span style="font-size:13px;color:#8A817A">· ~30 мин</span></div>
+          </div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/perfume.png" alt="Уход" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(270deg,#1A1210,transparent 35%)"></div></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ATMOSPHERE ============ -->
+  <section id="atmo" style="position:relative;z-index:3;background:#9E1B1B;color:#ECE3D4;padding:clamp(64px,9vw,130px) clamp(18px,5vw,64px);overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 80% 0%, rgba(0,0,0,.3), transparent 50%), radial-gradient(80% 70% at 0% 100%, rgba(0,0,0,.25), transparent 55%);pointer-events:none"></div>
+    <div style="position:relative;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(28px,5vw,70px);align-items:center">
+      <div data-reveal style="opacity:0;transform:translateX(-46px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)">
+        <div style="font-family:'Cormorant',serif;font-style:italic;font-size:22px;color:#F0D9A8">наша территория</div>
+        <h2 style="margin:6px 0 0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(34px,5vw,68px);line-height:.98">КРАСНЫЕ СТЕНЫ.<br/>ЧЁРНЫЙ ПОТОЛОК.<br/>ТВОЙ ВЕЧЕР.</h2>
+        <p style="margin:18px 0 0;max-width:460px;font-size:16px;line-height:1.7;color:#F3E2D6">Тёплый свет ламп, кожаные кресла Chesterfield, графика небоскрёбов на стене и запах дерева. Сюда заходят не «постричься», а провести время среди своих.</p>
+        <div style="display:flex;gap:36px;margin-top:34px;flex-wrap:wrap">
+          <div><div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:44px;line-height:1;color:#F0D9A8">6</div><div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#F3D9CC;margin-top:4px">кресел</div></div>
+          <div><div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:44px;line-height:1;color:#F0D9A8">12 000+</div><div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#F3D9CC;margin-top:4px">стрижек</div></div>
+          <div><div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:44px;line-height:1;color:#F0D9A8">4.9</div><div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#F3D9CC;margin-top:4px">рейтинг</div></div>
+        </div>
+      </div>
+      <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity 1s cubic-bezier(.2,.7,.2,1) .12s,transform 1s cubic-bezier(.2,.7,.2,1) .12s;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:1/1">
+        <img src="assets/interior-red.png" alt="Интерьер барбершопа" style="grid-row:span 2;width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
+        <img src="assets/interior-lounge.png" alt="Лаунж-зона" style="width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
+        <img src="assets/storefront.png" alt="Вход в барбершоп ХАН" style="width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MASTERS ============ -->
+  <section id="masters" style="position:relative;z-index:3;background:#0C0A09;padding:clamp(64px,9vw,130px) clamp(18px,5vw,64px)">
+    <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);max-width:1180px;margin:0 auto 48px;text-align:center">
+      <div style="font-family:'Cormorant',serif;font-style:italic;font-size:22px;color:#C9A24B">команда</div>
+      <h2 style="margin:6px 0 0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(38px,6vw,84px);line-height:.95;color:#ECE3D4">МАСТЕРА <span style="color:#9E1B1B">ХАН</span></h2>
+      <p style="margin:14px auto 0;max-width:460px;color:#9A9089;font-size:15px;line-height:1.6">Здесь будут реальные фото мастеров барбершопа.</p>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+      <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)">
+        <div style="position:relative;width:100%;aspect-ratio:4/5;border:1px solid rgba(201,162,75,.3);background:linear-gradient(160deg,#1a1310,#0e0b0a);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#6E6862">Фото мастера</span>
+        </div>
+        <div style="margin-top:16px;display:flex;align-items:baseline;justify-content:space-between"><h3 style="margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#ECE3D4">Имя Фамилия</h3><span style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24B">Топ-барбер</span></div>
+        <p style="margin:6px 0 0;color:#8A817A;font-size:14px">8 лет в ремесле · фейды и классика</p>
+      </div>
+      <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity .9s cubic-bezier(.2,.7,.2,1) .12s,transform .9s cubic-bezier(.2,.7,.2,1) .12s">
+        <div style="position:relative;width:100%;aspect-ratio:4/5;border:1px solid rgba(201,162,75,.3);background:linear-gradient(160deg,#1a1310,#0e0b0a);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#6E6862">Фото мастера</span>
+        </div>
+        <div style="margin-top:16px;display:flex;align-items:baseline;justify-content:space-between"><h3 style="margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#ECE3D4">Имя Фамилия</h3><span style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24B">Барбер</span></div>
+        <p style="margin:6px 0 0;color:#8A817A;font-size:14px">Борода · опасная бритва</p>
+      </div>
+      <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity .9s cubic-bezier(.2,.7,.2,1) .24s,transform .9s cubic-bezier(.2,.7,.2,1) .24s">
+        <div style="position:relative;width:100%;aspect-ratio:4/5;border:1px solid rgba(201,162,75,.3);background:linear-gradient(160deg,#1a1310,#0e0b0a);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#6E6862">Фото мастера</span>
+        </div>
+        <div style="margin-top:16px;display:flex;align-items:baseline;justify-content:space-between"><h3 style="margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#ECE3D4">Имя Фамилия</h3><span style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24B">Барбер</span></div>
+        <p style="margin:6px 0 0;color:#8A817A;font-size:14px">Детские стрижки · камуфляж</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOK / CONTACTS ============ -->
+  <section id="book" style="position:relative;z-index:3;background:linear-gradient(180deg,#0C0A09,#140E0C);padding:clamp(64px,9vw,130px) clamp(18px,5vw,64px)">
+    <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);max-width:1180px;margin:0 auto;border:1px solid rgba(201,162,75,.25);background:#16110F">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <div style="padding:clamp(30px,4vw,56px);border-right:1px solid rgba(201,162,75,.18)">
+          <div style="font-family:'Cormorant',serif;font-style:italic;font-size:22px;color:#C9A24B">записаться</div>
+          <h2 style="margin:6px 0 0;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(40px,5.5vw,76px);line-height:.92;color:#ECE3D4">ВРЕМЯ К<br/>МАСТЕРУ</h2>
+          <p style="margin:18px 0 28px;max-width:380px;color:#A89E95;font-size:15px;line-height:1.7">Оставь номер, перезвоним и подберём удобное время. Или запишись сам в пару касаний.</p>
+          <!-- BOOKING: заменить href на ссылку yclients -->
+          <a href="#book" style="display:inline-flex;align-items:center;gap:14px;padding:16px 30px;background:#9E1B1B;color:#ECE3D4;font-family:'Oswald',sans-serif;font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(201,162,75,.35)">Записаться онлайн →</a>
+          <div style="display:flex;gap:14px;margin-top:22px">
+            <a href="#" style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid rgba(201,162,75,.3);color:#C9A24B;text-decoration:none;font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.05em">IG</a>
+            <a href="#" style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid rgba(201,162,75,.3);color:#C9A24B;text-decoration:none;font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.05em">TG</a>
+            <a href="#" style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid rgba(201,162,75,.3);color:#C9A24B;text-decoration:none;font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.05em">WA</a>
+          </div>
+        </div>
+        <div style="padding:clamp(30px,4vw,56px);display:flex;flex-direction:column;gap:26px;justify-content:center">
+          <div style="display:flex;gap:16px;align-items:flex-start"><span style="font-family:'Oswald',sans-serif;color:#9E1B1B;font-size:13px;letter-spacing:.2em;padding-top:3px">01</span><div><div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8A817A">Адрес</div><div style="font-size:18px;color:#ECE3D4;margin-top:4px">Москва, Болотниковская улица, 21 ст8<br/><span style="color:#8A817A;font-size:14px">Метро Нагатинская</span></div></div></div>
+          <div style="display:flex;gap:16px;align-items:flex-start"><span style="font-family:'Oswald',sans-serif;color:#9E1B1B;font-size:13px;letter-spacing:.2em;padding-top:3px">02</span><div><div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8A817A">Часы работы</div><div style="font-size:18px;color:#ECE3D4;margin-top:4px">Ежедневно · 10:00 до 22:00</div></div></div>
+          <div style="display:flex;gap:16px;align-items:flex-start"><span style="font-family:'Oswald',sans-serif;color:#9E1B1B;font-size:13px;letter-spacing:.2em;padding-top:3px">03</span><div><div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8A817A">Телефон</div><a href="tel:+79361013690" style="font-size:18px;color:#ECE3D4;margin-top:4px;text-decoration:none;display:block">+7 936 101 36 90</a></div></div>
+          <div style="margin-top:6px;height:160px;border:1px solid rgba(201,162,75,.2);background:repeating-linear-gradient(45deg,#120D0B 0 10px,#16110F 10px 20px);display:flex;align-items:center;justify-content:center;color:#8A817A;font-size:13px;letter-spacing:.1em">КАРТА · вставьте Яндекс или Google карту</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="position:relative;z-index:3;background:#0C0A09;border-top:1px solid rgba(201,162,75,.18);padding:40px clamp(18px,5vw,64px);overflow:hidden">
+    <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between">
+      <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(60px,14vw,150px);line-height:.8;letter-spacing:.04em;color:rgba(236,227,212,.06)">ХАН</div>
+      <div style="text-align:right;color:#8A817A;font-size:13px;line-height:1.8">
+        <div style="color:#C9A24B;font-family:'Oswald',sans-serif;letter-spacing:.2em;text-transform:uppercase;font-size:14px">Барбершоп ХАН</div>
+        <div>© 2026 · Мужская территория</div>
+        <div>Москва, Болотниковская 21 ст8</div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function buildShatter(){
+    var intro=document.getElementById('khan-intro');
+    var shardsLayer=document.getElementById('khan-shards');
+    var svg=document.getElementById('khan-cracks');
+    var flash=document.getElementById('khan-flash');
+    var frost=document.getElementById('khan-frost');
+    if(!intro||!shardsLayer||!svg) return;
+    shardsLayer.innerHTML=''; while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var W=window.innerWidth, H=window.innerHeight;
+    var cx=W*0.47, cy=H*0.42;
+    var maxR=Math.hypot(Math.max(cx,W-cx),Math.max(cy,H-cy));
+    var rnd=function(a,b){return a+Math.random()*(b-a)};
+    shardsLayer.style.perspective='1500px';
+    shardsLayer.style.perspectiveOrigin=cx+'px '+cy+'px';
+
+    var seeds=[];
+    seeds.push([cx,cy]);
+    for(var i=0;i<16;i++){ var a=rnd(0,6.283), r=Math.pow(Math.random(),2.3)*maxR*0.30; seeds.push([cx+Math.cos(a)*r, cy+Math.sin(a)*r]); }
+    for(var i2=0;i2<58;i2++){ var a2=rnd(0,6.283), r2=Math.pow(Math.random(),1.65)*maxR*1.18; seeds.push([cx+Math.cos(a2)*r2, cy+Math.sin(a2)*r2]); }
+
+    var BX0=-0.14*W, BY0=-0.14*H, BX1=1.14*W, BY1=1.14*H;
+    var clip=function(poly,ax,ay,bx,by){
+      var nx=bx-ax, ny=by-ay, c=nx*(ax+bx)/2+ny*(ay+by)/2, out=[];
+      for(var i=0;i<poly.length;i++){
+        var cur=poly[i], nxt=poly[(i+1)%poly.length];
+        var dc=nx*cur[0]+ny*cur[1]-c, dn=nx*nxt[0]+ny*nxt[1]-c;
+        if(dc<=0) out.push(cur);
+        if((dc<0&&dn>0)||(dc>0&&dn<0)){ var t=dc/(dc-dn); out.push([cur[0]+t*(nxt[0]-cur[0]), cur[1]+t*(nxt[1]-cur[1])]); }
+      }
+      return out;
+    };
+    var cells=[];
+    for(var s=0;s<seeds.length;s++){
+      var poly=[[BX0,BY0],[BX1,BY0],[BX1,BY1],[BX0,BY1]];
+      var sx0=seeds[s][0], sy0=seeds[s][1];
+      for(var j=0;j<seeds.length && poly.length;j++){ if(j===s) continue; poly=clip(poly,sx0,sy0,seeds[j][0],seeds[j][1]); }
+      if(poly.length>=3) cells.push({poly:poly,seed:seeds[s]});
+    }
+
+    cells.forEach(function(c){
+      var sx=c.seed[0], sy=c.seed[1];
+      var dist=Math.hypot(sx-cx,sy-cy), nd=Math.min(dist/maxR,1);
+      var d=document.createElement('div');
+      var cp='polygon('+c.poly.map(function(p){return p[0].toFixed(1)+'px '+p[1].toFixed(1)+'px'}).join(',')+')';
+      var spec=rnd(0,360), tintA=rnd(.05,.13);
+      d.style.cssText='position:absolute;inset:0;clip-path:'+cp+';-webkit-clip-path:'+cp+
+        ';background:linear-gradient('+spec.toFixed(0)+'deg, rgba(255,255,255,'+tintA.toFixed(3)+') 0%, rgba(255,255,255,.015) 24%, rgba(201,162,75,.035) 62%, rgba(255,255,255,'+(tintA*0.8).toFixed(3)+') 100%)'+
+        ';box-shadow:inset 0 0 0 1px rgba(255,255,255,.11), inset 1px 1px 0 rgba(255,255,255,.07), inset 0 0 22px rgba(255,255,255,.035);will-change:transform,opacity;backface-visibility:hidden';
+      shardsLayer.appendChild(d);
+      var ux=(sx-cx)/(dist||1), uy=(sy-cy)/(dist||1);
+      var fly=maxR*(0.45+nd*0.9)*rnd(0.85,1.5);
+      var tx=ux*fly + rnd(-50,50);
+      var ty=uy*fly*0.55 + maxR*rnd(0.75,1.25);
+      var tz=rnd(-260,560);
+      var rx=rnd(-300,300), ry=rnd(-300,300), rz=rnd(-220,220);
+      var delay=1230 + nd*300 + rnd(0,80);
+      var dur=1150 + rnd(0,520) + nd*250;
+      d.animate([
+        {transform:'translate3d(0,0,0) rotateX(0deg) rotateY(0deg) rotateZ(0deg)',opacity:1,offset:0},
+        {opacity:1,offset:0.14},
+        {transform:'translate3d('+tx.toFixed(0)+'px,'+ty.toFixed(0)+'px,'+tz.toFixed(0)+'px) rotateX('+rx.toFixed(0)+'deg) rotateY('+ry.toFixed(0)+'deg) rotateZ('+rz.toFixed(0)+'deg)',opacity:0,offset:1}
+      ],{duration:dur,delay:delay,easing:'cubic-bezier(.33,.06,.32,1)',fill:'both'});
+    });
+
+    var ns='http://www.w3.org/2000/svg';
+    cells.forEach(function(c){
+      var sx=c.seed[0], sy=c.seed[1], nd=Math.min(Math.hypot(sx-cx,sy-cy)/maxR,1);
+      var p=document.createElementNS(ns,'path');
+      p.setAttribute('d','M '+c.poly.map(function(pt){return pt[0].toFixed(1)+' '+pt[1].toFixed(1)}).join(' L ')+' Z');
+      p.setAttribute('fill','none'); p.setAttribute('stroke','#fff'); p.setAttribute('stroke-width','1');
+      p.setAttribute('stroke-linejoin','round'); p.setAttribute('opacity','0');
+      p.style.filter='drop-shadow(0 0 1.4px rgba(255,255,255,.55))';
+      svg.appendChild(p);
+      p.animate([{opacity:0},{opacity:0.55,offset:0.4},{opacity:0.7}],{duration:520,delay:200+nd*620,easing:'ease-out',fill:'both'});
+    });
+    svg.animate([{opacity:1,offset:0},{opacity:1,offset:0.001},{opacity:0,offset:1}],{duration:520,delay:1320,fill:'both'});
+
+    var ring=document.createElement('div');
+    ring.style.cssText='position:absolute;left:'+cx+'px;top:'+cy+'px;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;border:2px solid rgba(255,255,255,.85);box-shadow:0 0 24px rgba(255,255,255,.6);opacity:0';
+    shardsLayer.appendChild(ring);
+    ring.animate([
+      {transform:'scale(0.2)',opacity:0,offset:0},
+      {transform:'scale(1)',opacity:.9,offset:0.12},
+      {transform:'scale(14)',opacity:0,offset:1}
+    ],{duration:780,delay:1220,easing:'cubic-bezier(.2,.7,.3,1)',fill:'both'});
+
+    if(frost) frost.animate([{opacity:1},{opacity:0}],{duration:480,delay:1280,fill:'both'});
+    if(flash) flash.animate([{opacity:0},{opacity:.9,offset:.28},{opacity:0}],{duration:640,delay:1200,easing:'ease-out',fill:'both'});
+    shardsLayer.animate([
+      {transform:'translate(0,0)'},{transform:'translate(-13px,9px)'},{transform:'translate(11px,-8px)'},
+      {transform:'translate(-8px,5px)'},{transform:'translate(4px,-3px)'},{transform:'translate(0,0)'}
+    ],{duration:540,delay:1230,easing:'ease-in-out'});
+  }
+
+  function reveal(){
+    document.querySelectorAll('[data-reveal]').forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if(r.top < (window.innerHeight || 800) * 0.9 && r.bottom > 0){
+        el.style.opacity = '1'; el.style.transform = 'none';
+      }
+    });
+  }
+
+  function start(){
+    if(reduce){
+      var intro=document.getElementById('khan-intro'); if(intro) intro.style.display='none';
+      document.querySelectorAll('[data-reveal]').forEach(function(el){el.style.opacity='1';el.style.transform='none'});
+      return;
+    }
+    buildShatter();
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='none'; io.unobserve(e.target);} });
+      }, { threshold:0.12, rootMargin:'0px 0px -8% 0px' });
+      document.querySelectorAll('[data-reveal]').forEach(function(el){ io.observe(el); });
+    }
+    var onScroll = function(){ reveal(); };
+    window.addEventListener('scroll', onScroll, { passive:true });
+    window.addEventListener('resize', onScroll, { passive:true });
+    setTimeout(reveal, 60);
+    setTimeout(function(){ var intro=document.getElementById('khan-intro'); if(intro) intro.style.display='none'; }, 3900);
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+</script>
+</body>
+</html>

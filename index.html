@@ -26,6 +26,10 @@
   @keyframes scrollhint{0%,100%{transform:translateY(0);opacity:.45}50%{transform:translateY(9px);opacity:1}}
   @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @keyframes haze{0%,100%{opacity:.6}50%{opacity:.95}}
+  @media(max-width:760px){
+    .navlink{display:none!important}
+    #khan-frost{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:rgba(12,10,9,.55)!important}
+  }
 </style>
 </head>
 <body>
@@ -40,10 +44,10 @@
       <span style="font-family:'PT Sans',sans-serif;font-size:11px;letter-spacing:.34em;color:#C9A24B;text-transform:uppercase">Барбершоп</span>
     </a>
     <div style="display:flex;align-items:center;gap:clamp(14px,2.4vw,38px)">
-      <a href="#services" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Услуги</a>
-      <a href="#atmo" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Атмосфера</a>
-      <a href="#masters" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Мастера</a>
-      <a href="#book" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Контакты</a>
+      <a href="#services" class="navlink" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Услуги</a>
+      <a href="#atmo" class="navlink" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Атмосфера</a>
+      <a href="#masters" class="navlink" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Мастера</a>
+      <a href="#book" class="navlink" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B6ABA1;text-decoration:none">Контакты</a>
       <a href="https://barbershopkhan.clients.site/" target="_blank" rel="noopener" style="display:inline-block;padding:11px 22px;background:#9E1B1B;color:#ECE3D4;font-family:'Oswald',sans-serif;font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(201,162,75,.35)">Записаться</a>
     </div>
   </nav>
@@ -112,7 +116,7 @@
             <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Консультация, мытьё, стрижка машинкой и ножницами, укладка. Подбираем форму под тип лица и стиль.</p>
             <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">1500 ₽</span><span style="font-size:13px;color:#8A817A">· ~45 мин</span></div>
           </div>
-          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/clipper.png" alt="Машинка для стрижки" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(90deg,#16110F,transparent 35%)"></div></div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/clipper.jpg" alt="Машинка для стрижки" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(90deg,#16110F,transparent 35%)"></div></div>
         </div>
       </article>
       <article style="position:sticky;top:128px;margin-top:34px;border:1px solid rgba(201,162,75,.25);background:linear-gradient(135deg,#1A1210,#0E0B0A);box-shadow:0 -10px 40px rgba(0,0,0,.5);overflow:hidden">
@@ -123,7 +127,7 @@
             <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Полный образ: стрижка и моделирование бороды с горячим полотенцем и контуром опасной бритвой.</p>
             <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">2200 ₽</span><span style="font-size:13px;color:#8A817A">· ~75 мин</span></div>
           </div>
-          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/brush.png" alt="Помазок" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(270deg,#1A1210,transparent 35%)"></div></div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/brush.jpg" alt="Помазок" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(270deg,#1A1210,transparent 35%)"></div></div>
         </div>
       </article>
       <article style="position:sticky;top:148px;margin-top:34px;border:1px solid rgba(201,162,75,.25);background:linear-gradient(135deg,#16110F,#0E0B0A);box-shadow:0 -10px 40px rgba(0,0,0,.5);overflow:hidden">
@@ -134,7 +138,7 @@
             <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Классическое бритьё опасной бритвой, два горячих и холодное полотенце, уход и тонизирование кожи.</p>
             <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">1300 ₽</span><span style="font-size:13px;color:#8A817A">· ~40 мин</span></div>
           </div>
-          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/razor.png" alt="Опасная бритва" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(90deg,#16110F,transparent 35%)"></div></div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/razor.jpg" alt="Опасная бритва" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(90deg,#16110F,transparent 35%)"></div></div>
         </div>
       </article>
       <article style="position:sticky;top:168px;margin-top:34px;border:1px solid rgba(201,162,75,.25);background:linear-gradient(135deg,#1A1210,#0E0B0A);box-shadow:0 -10px 40px rgba(0,0,0,.5);overflow:hidden">
@@ -145,7 +149,7 @@
             <p style="margin:12px 0 0;max-width:420px;color:#A89E95;font-size:15px;line-height:1.6">Натуральное тонирование волос и бороды, убираем седину мягко, без эффекта «прокраски».</p>
             <div style="display:flex;align-items:baseline;gap:14px;margin-top:24px"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;color:#C9A24B">800 ₽</span><span style="font-size:13px;color:#8A817A">· ~30 мин</span></div>
           </div>
-          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/perfume.png" alt="Уход" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(270deg,#1A1210,transparent 35%)"></div></div>
+          <div style="flex:1 1 280px;min-height:300px;position:relative;background:#000"><img src="assets/perfume.jpg" alt="Уход" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92"/><div style="position:absolute;inset:0;background:linear-gradient(270deg,#1A1210,transparent 35%)"></div></div>
         </div>
       </article>
     </div>
@@ -166,9 +170,9 @@
         </div>
       </div>
       <div data-reveal style="opacity:0;transform:translateY(46px);transition:opacity 1s cubic-bezier(.2,.7,.2,1) .12s,transform 1s cubic-bezier(.2,.7,.2,1) .12s;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:1/1">
-        <img src="assets/interior-red.png" alt="Интерьер барбершопа" style="grid-row:span 2;width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
-        <img src="assets/interior-lounge.png" alt="Лаунж-зона" style="width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
-        <img src="assets/storefront.png" alt="Вход в барбершоп ХАН" style="width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
+        <img src="assets/interior-red.jpg" alt="Интерьер барбершопа" style="grid-row:span 2;width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
+        <img src="assets/interior-lounge.jpg" alt="Лаунж-зона" style="width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
+        <img src="assets/storefront.jpg" alt="Вход в барбершоп ХАН" style="width:100%;height:100%;object-fit:cover;border:1px solid rgba(240,217,168,.3)"/>
       </div>
     </div>
   </section>
@@ -263,8 +267,10 @@
 
     var seeds=[];
     seeds.push([cx,cy]);
-    for(var i=0;i<16;i++){ var a=rnd(0,6.283), r=Math.pow(Math.random(),2.3)*maxR*0.30; seeds.push([cx+Math.cos(a)*r, cy+Math.sin(a)*r]); }
-    for(var i2=0;i2<58;i2++){ var a2=rnd(0,6.283), r2=Math.pow(Math.random(),1.65)*maxR*1.18; seeds.push([cx+Math.cos(a2)*r2, cy+Math.sin(a2)*r2]); }
+    var _mob = W < 700;
+    var _n1 = _mob ? 8 : 16, _n2 = _mob ? 22 : 58;
+    for(var i=0;i<_n1;i++){ var a=rnd(0,6.283), r=Math.pow(Math.random(),2.3)*maxR*0.30; seeds.push([cx+Math.cos(a)*r, cy+Math.sin(a)*r]); }
+    for(var i2=0;i2<_n2;i2++){ var a2=rnd(0,6.283), r2=Math.pow(Math.random(),1.65)*maxR*1.18; seeds.push([cx+Math.cos(a2)*r2, cy+Math.sin(a2)*r2]); }
 
     var BX0=-0.14*W, BY0=-0.14*H, BX1=1.14*W, BY1=1.14*H;
     var clip=function(poly,ax,ay,bx,by){

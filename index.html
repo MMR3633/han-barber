@@ -26,11 +26,6 @@
   @keyframes scrollhint{0%,100%{transform:translateY(0);opacity:.45}50%{transform:translateY(9px);opacity:1}}
   @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @keyframes haze{0%,100%{opacity:.6}50%{opacity:.95}}
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:.001s!important;animation-delay:0s!important}
-    #khan-intro{display:none!important}
-    [data-reveal]{opacity:1!important;transform:none!important}
-  }
 </style>
 </head>
 <body>
@@ -94,7 +89,7 @@
 
   <!-- ============ TICKER ============ -->
   <div style="position:relative;z-index:3;overflow:hidden;background:#9E1B1B;border-top:1px solid rgba(201,162,75,.3);border-bottom:1px solid rgba(201,162,75,.3);padding:13px 0">
-    <div style="display:flex;width:max-content;animation:marquee 26s linear infinite;font-family:'Oswald',sans-serif;font-weight:500;font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:#ECE3D4">
+    <div style="display:flex;width:max-content;animation:marquee 50s linear infinite;font-family:'Oswald',sans-serif;font-weight:500;font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:#ECE3D4">
       <span style="padding:0 30px">Стрижка ✦ Борода ✦ Горячее бритьё ✦ Камуфляж седины ✦ Укладка ✦</span>
       <span style="padding:0 30px">Стрижка ✦ Борода ✦ Горячее бритьё ✦ Камуфляж седины ✦ Укладка ✦</span>
       <span style="padding:0 30px">Стрижка ✦ Борода ✦ Горячее бритьё ✦ Камуфляж седины ✦ Укладка ✦</span>
@@ -254,8 +249,6 @@
 
 <script>
 (function(){
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   function buildShatter(){
     var intro=document.getElementById('khan-intro');
     var shardsLayer=document.getElementById('khan-shards');
@@ -360,21 +353,16 @@
   }
 
   function start(){
-    if(reduce){
-      var intro=document.getElementById('khan-intro'); if(intro) intro.style.display='none';
-      document.querySelectorAll('[data-reveal]').forEach(function(el){el.style.opacity='1';el.style.transform='none'});
-      return;
-    }
     buildShatter();
     if('IntersectionObserver' in window){
       var io = new IntersectionObserver(function(entries){
         entries.forEach(function(e){ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='none'; io.unobserve(e.target);} });
       }, { threshold:0.12, rootMargin:'0px 0px -8% 0px' });
       document.querySelectorAll('[data-reveal]').forEach(function(el){ io.observe(el); });
+    } else {
+      reveal();
     }
-    var onScroll = function(){ reveal(); };
-    window.addEventListener('scroll', onScroll, { passive:true });
-    window.addEventListener('resize', onScroll, { passive:true });
+    // one-time pass for anything already in view (no continuous scroll handler, keeps scrolling smooth)
     setTimeout(reveal, 60);
     setTimeout(function(){ var intro=document.getElementById('khan-intro'); if(intro) intro.style.display='none'; }, 3900);
   }
